@@ -45,7 +45,7 @@ void draw(){
     text ("Puede levantar hasta 20 mil kg,\n mientras viaja a una \nvelocidad de 230 km/h", movimiento3,350);
     movimiento3 = movimiento3 - (velocidad + 1);
   }else if(segundos == 25){
-    fill(0,60,166);
+    fill(168,67,238);
     image(H4,0,0,width,height);
     textAlign(CENTER);
     text ("Antes se utilizaba como grua aerea, \n debido a su gran potencia.", 300,movimiento4);
@@ -69,7 +69,7 @@ void draw(){
 }
 
 void mouseClicked(){
-      if((mouseX>560)&& (mouseX <560+80)&& (mouseY>20) && (mouseY<20+60)){
+      if(segundos >= 30 && (mouseX>560)&& (mouseX <560+80)&& (mouseY>20) && (mouseY<20+60)){
       segundos = 0;
       movimiento1 = 600;
       movimiento2 = -40;
